@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 500;
+}
+
+.cool-transition {
+  animation: cool-transition 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes cool-transition {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.sidebar-menu-close {
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.sidebar-menu-open {
+  transform: translateX(0);
+  transition: transform 250ms ease-in-out;
+}

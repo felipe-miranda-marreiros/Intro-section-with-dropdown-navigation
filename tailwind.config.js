@@ -2,7 +2,13 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'snape-white': 'hsl(0, 0%, 98%)',
+        'snape-gray': 'hsl(0, 0%, 41%)',
+        'snape-black': 'hsl(0, 0%, 8%)',
+      },
+    },
   },
   plugins: [],
 };
