@@ -8,6 +8,10 @@ module.exports = {
         'snape-gray': 'hsl(0, 0%, 41%)',
         'snape-black': 'hsl(0, 0%, 8%)',
       },
+      backgroundImage: {
+        'hero-mobile': "url('/public/image-hero-mobile.png')",
+        'hero-desktop': "url('/public/image-hero-desktop.png')",
+      },
     },
   },
   plugins: [],
