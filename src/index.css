@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
   font-weight: 500;
   min-height: 100vh;
 }
@@ -34,6 +34,8 @@ body {
 .m-fadeOut {
   visibility: hidden;
   opacity: 0;
+  position: absolute;
+  left: -999em;
   transition: visibility 0s linear 300ms, opacity 300ms;
 }
 
