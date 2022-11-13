@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import React, { useState } from "react";
 
-import { clients } from './dev-data/clients';
-import { company } from './dev-data/company';
-import { features } from './dev-data/features';
+import { clients } from "./dev-data/clients";
+import { company } from "./dev-data/company";
+import { features } from "./dev-data/features";
 
-import { logo, closeIcon, menuIcon } from './images';
+import { logo, closeIcon, menuIcon } from "./images";
 
-import { Dropdown } from './components';
+import { Dropdown } from "./components";
 
 const App = () => {
   const [isFeatureOpen, setOpenFeature] = useState(false);
@@ -23,7 +23,7 @@ const App = () => {
 
         <nav
           className={`lg:static lg:p-0 lg:flex lg:flex-1 items-center lg:justify-between text-snape-gray h-full z-10 fixed top-0 right-0 left-1/3 pt-20 px-5 bg-snape-white lg:bg-white overflow-y-auto pb-2 sidebar-menu-close ${
-            isMenuOpen ? 'sidebar-menu-open' : ''
+            isMenuOpen ? "sidebar-menu-open" : ""
           }`}
         >
           <button
